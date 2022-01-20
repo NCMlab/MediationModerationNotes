@@ -7,5 +7,3 @@ I use the [Zettelkasten](https://zettelkasten.de/posts/overview/) approach to no
 The result is the collection of pages you are seeing in this repository found here: (https://ncmlab.github.io/MediationModerationNotes/)
 
 
-## References
-1. 
