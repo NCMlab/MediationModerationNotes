@@ -21,10 +21,11 @@ A-->|c'| C;
 |C|1|1|0|
 
 This matrix is read row by row with the variable in each row being the outcome variable. Each column with a value in it is a predictor in the model. In the above figure, there are two equations. The two equations are:
+ 
 $B = \beta_0 + \beta_1 \cdot A + e_i$
+ 
 $C = \beta_0 + \beta_1 \cdot A + \beta_2 \cdot B + e_i$
-
-
+ 
 
 It is also possible that an analysis requires the same outcome variable in multiple equations. Even in the simplest model this is the case. Therefore, there needs to be a second layer (third dimension) to the above matrix. It will be like this:
 

@@ -12,11 +12,16 @@ A--> |c'| C;
 ```
 
 $B1 = \beta_0 + a_1 \cdot A + e_i$
+ 
 $B2 = \beta_0 + a_2 \cdot A + b_1 \cdot B1 + e_i$
+ 
 $C=\beta_0 + c' \cdot A + b_3 \cdot B1 + b_2 \cdot B2 + e_i$
+
 ## Pathways
 $a_1 \cdot b_1 \cdot b_2$
+ 
 $a_2 \cdot b_2$
+ 
 $a_1 \cdot b_3$
 
 ---
