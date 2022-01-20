@@ -10,7 +10,7 @@ Created: 01-07-2022 10:07
 6. [[Simple Moderation]]
 7. [[Flexible modeling of Mediation]]
 8. [[Mediation and Moderation for Brain Imaging]]
-9. [[Test Note]]
+
 
 ## Subproject list
 - Decide on setup file format, specifically what is needed.
