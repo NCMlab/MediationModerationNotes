@@ -13,7 +13,7 @@ Created: 01-07-2022 10:07
 
 
 ## Subproject list
-- Decide on setup file format, specifically what is needed.
+- Decide on [[Process Model Setup File|setup file format]], specifically what is needed.
 	- This is where the user writes out the direct, indirect, path matrics as seen here [[Flexible modeling of Mediation]]
 - Read setup file
 - [[Render Mediation-Moderation Setup File]]
