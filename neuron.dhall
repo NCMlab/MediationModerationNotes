@@ -1,9 +1,9 @@
 -- Documentation for neuron.dhall: https://neuron.zettel.page/configuration
 { siteTitle = "Mediation and Moderation Notes"
 , author = Some "Jason Steffener"
-, siteBaseUrl = Some "https://steffejr.github.io/MediationModerationNotes/"
+, siteBaseUrl = Some "https://ncmlab.github.io/MediationModerationNotes/"
 -- List of color names: https://semantic-ui.com/usage/theming.html#sitewide-defaults
-, theme = "teal"
+, theme = "orange"
 -- This is used in the "edit" button
-, editUrl = Some "https://github.com/steffejr/MediationModerationNotes/edit/master/"
+, editUrl = Some "https://github.com/ncmlab/MediationModerationNotes/edit/master/"
 }
