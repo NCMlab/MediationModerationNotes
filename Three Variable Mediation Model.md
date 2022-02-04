@@ -19,9 +19,20 @@ A-->|a| B;
 B-->|b| C;
 A-->|c'| C;
 ```
+## Direct Effects Matrix
+| |A|B|C|
+|---|---|---|---|
+|A|0|0|0|
+|B|1|0|0|
+|C|1|1|0|
+
 
 $B=\beta_0+a\cdot A$
 $C = \beta_0+c'\cdot A+b\cdot B$
+
+output = regstats(B, [A])
+output = regstats(C, [A B])
+
 
 
 Once these regression models are fit to the data the following effects are reported:

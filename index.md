@@ -15,11 +15,35 @@ Created: 01-07-2022 10:07
 
 
 ## Subproject list
-- Decide on [[Process Model Setup File|setup file format]], specifically what is needed.
-	- This is where the user writes out the direct, indirect, path matrics as seen here [[Flexible modeling of Mediation]]
+- Generic setup file
+	- This includes the direct, interaction, and path matrices
+	- There will eventually be a library of these files
+		- Examples
+			- [[Model 4]], see its figure [[Model4Figure|here]].
+			- [[Model 5]], see its figure [[Model5Figure|here]].
+			- [[Model 6]], see its figure [[Model6Figure|here]].
+* Analysis setup procedure
+	* Select generic setup file
+		* Check the file for the number of variables that are used
+	* Select data to be used for the model
+		* This selection procedure will be based on how many variables are needed for the model
+		* Data can be  imaging data
+		* Data can be CSV file
+			* If CSV data is used, then check to see if there is a header row
+			* Check to see how many columns are in the file.
+				* If there are more than one variable in the file, then ask the user which variable to use.
+	* Parameters to ask of the user
+			* Number of bootstraps
+			* Type of confidence intervals to calculate
+				* Selection from a menu/list
+			* Whether to apply TFCE
+				* Yes/No
+			* What correction for multiple comparisons to use
+				 * Selection from a menu/list
+		* Output from this step will be an analysis setup file specifically for processing the data
+
+			
 - Read setup file
-- [[Render Mediation-Moderation Setup File]]
-- Have user choose data and assign to design matrix
 - Create equations using the data/variables as defined in the setup file
 - Process data/equations
 - Create path values as defined in the setup file, based on results

@@ -25,7 +25,10 @@ Therefore, B is equivalent to [2 1 4 2] resamples.
 Is the use of this resample matrix faster than the resample algorithms?
 
 
+## Bootstrap with python
+(https://people.duke.edu/~ccc14/sta-663/ResamplingAndMonteCarloSimulations.html)
 
+np.random.choice(N,N)
 
 
 
