@@ -33,13 +33,13 @@ Created: 01-07-2022 10:07
 			* Check to see how many columns are in the file.
 				* If there are more than one variable in the file, then ask the user which variable to use.
 	* Parameters to ask of the user
-			* Number of bootstraps
+		* Number of bootstraps
 			* Type of confidence intervals to calculate
 				* Selection from a menu/list
-			* Whether to apply TFCE
-				* Yes/No
-			* What correction for multiple comparisons to use
-				 * Selection from a menu/list
+		* Whether to apply TFCE
+			* Yes/No
+		* What correction for multiple comparisons to use
+			 * Selection from a menu/list
 		* Output from this step will be an analysis setup file specifically for processing the data
 
 			
