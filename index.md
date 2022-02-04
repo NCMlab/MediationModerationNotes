@@ -41,7 +41,7 @@ Created: 01-07-2022 10:07
 		* What correction for multiple comparisons to use
 			 * Selection from a menu/list
 		* Output from this step will be an analysis setup file specifically for processing the data
-
+* [[Create regression equations from the setup file]]
 			
 - Read setup file
 - Create equations using the data/variables as defined in the setup file
