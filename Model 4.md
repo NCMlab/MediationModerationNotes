@@ -1,19 +1,27 @@
-ModelName = 'Model 4'
-Direct=
-	['A', 'B', 'C';
-	0,0,0;
-	1,0,0;
-	1,1,0]
+# Model 4
+```mermaid
+graph LR;
+A --> C;
+A --> B --> C;
+```
 
-Interaction=
-	['A','B','C';
-	0,0,0;
-	0,0,0;
-	0,0,0]
+## Its definition file
+[[Model4_definition]]
 
-Path=['A','B','C';
-	0,0,0;
-	1,0,0;
-	0,2,0]
 
-	
+## Setting up the models for analysis
+[[Prepare Model for Analysis]]
+
+```python
+	Out = ['', 'B', 'C']
+	In = [[],['A'],['A','B']]
+	Inter = [ [[]], [[]], [[]] ] 
+```
+
+## Estimating the regression equations
+[[Run Regression Model]]
+
+```python
+	regstats(B,[A])
+	regstats(C,[A B])
+```		

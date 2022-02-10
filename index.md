@@ -19,9 +19,9 @@ Created: 01-07-2022 10:07
 	- This includes the direct, interaction, and path matrices
 	- There will eventually be a library of these files
 		- Examples
-			- [[Model 4]], see its figure [[Model4Figure|here]].
-			- [[Model 5]], see its figure [[Model5Figure|here]].
-			- [[Model 6]], see its figure [[Model6Figure|here]].
+			- [[Model 4]]
+			- [[Model 5]]
+			- [[Model 6]]
 * Analysis setup procedure
 	* Select Model setup file (which only defines the model and NOT the data)
 		* Check the file for the number of variables that are used
@@ -42,8 +42,10 @@ Created: 01-07-2022 10:07
 		* What correction for multiple comparisons to use
 			 * Selection from a menu/list
 		* Output from this step will be an analysis setup file specifically for processing the data
-* [[Create regression equations from the setup file]]
-			
+* [[Prepare Model for Analysis]]
+* [[Prepare Model for Analysis Model 6]]
+
+
 - Read setup file
 - Create equations using the data/variables as defined in the setup file
 - Process data/equations

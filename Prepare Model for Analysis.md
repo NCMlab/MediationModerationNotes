@@ -1,22 +1,5 @@
-# Create regression equations from the setup file
-## Assume we are working with this model:
-ModelName = 'Model 5'
-Direct=
-	['A', 'B', 'C';
-	0,0,0;
-	1,0,0;
-	1,1,0]
+# Prepare Model for Analysis 
 
-Interaction=
-	['A','B','C';
-	0,0,0;
-	0,0,0;
-	1,1,0]
-
-Path=['A','B','C';
-	0,0,0;
-	1,0,0;
-	0,2,0]
 
 
 The direct matrix needs to be of size (MxM), where M is the number of variables in the model
@@ -33,8 +16,9 @@ This needs some thought because some variables may be brain imaging data and req
 Every regression model has two parts: the Outcome variable and the Input Variable(s).
 For this model we will consider there being three variables named A, B, and C. 
 ```
-Out = list
-In = list
+Out = list(length = number of variables)
+In = list(length = number of variables)
+count = 0
 for r in (Rows of Direct):
 	F = find(r not equal to zero)
 	if length(F) > 0:
@@ -43,14 +27,10 @@ for r in (Rows of Direct):
 		 for j in F:
 			CurrentModel.append(variable in column(F(j)))
 		In.append(CurrentModel)
-```	
+	count += 1
+```
 
-For this specific example we should now have
-```
-	Out = ['B', 'C']
-	In = [['A'],['A','B']]
-	Inter = [[],[],['B','C']]
-```
+
 Now we need to add interactions
 
 ```
@@ -64,4 +44,3 @@ for t in size(Interaction,3):
 			Inter[row count].append(CurrentModel)
 ```
 			
-	
