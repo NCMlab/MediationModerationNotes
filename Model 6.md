@@ -24,6 +24,7 @@ W --> C;
 
 ## Estimating the regression equations
 [[Run Regression Model]]
+
 These are the regression equations that should be created from this process. dA means variable A with its mean removed
 
 ```python

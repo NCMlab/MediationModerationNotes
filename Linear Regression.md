@@ -30,6 +30,17 @@ $$
 $$
 (X^TX)^{-1}X^T Y = b
 $$
+## Precalculation
+If the independent varivale $Y$ is brain imaging data, then the following is allowed:
+```python
+	Nvoxels
+	transX = transpose(X)
+	pX = inverse(X*transX)*transX
+	beta = size(Nvoxels, NcolumnsInX)
+	for i in Y:
+		beta = pX*i
+```
 
+The pX variable is also called the pseudoinverse of X
 ## References
 1. 
