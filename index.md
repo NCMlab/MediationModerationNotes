@@ -11,7 +11,7 @@ Created: 01-07-2022 10:07
 7. [[Flexible modeling of Mediation]]
 8. [[Mediation and Moderation for Brain Imaging]]
 9. [[Library of Mediation-Moderation Models]]
-10. 
+
 
 
 ## Subproject list
@@ -32,15 +32,16 @@ Created: 01-07-2022 10:07
 			* If CSV data is used, then check to see if there is a header row
 			* Check to see how many columns are in the file.
 				* If there are more than one variable in the file, then ask the user which variable to use.
-	* Parameters to ask of the user
-		* Number of bootstraps (default of 1000)
+	* **Parameters to ask of the user**
+		1 Number of bootstraps (default of 1000)
 			* Type of confidence intervals to calculate
 				* Selection from a menu/list
-					* 
-		* Whether to apply TFCE (default of No)
+					* Percentile, Bias-Corrected
+		2 Whether to apply TFCE (default of No)
 			* Yes/No
-		* What correction for multiple comparisons to use
+		3 What correction for multiple comparisons to use
 			 * Selection from a menu/list
+				 * None, Family-wise, False-discovery
 		* Output from this step will be an analysis setup file specifically for processing the data
 * [[Prepare Model for Analysis]]
 * [[Prepare Model for Analysis Model 6]]
@@ -64,4 +65,19 @@ Created: 01-07-2022 10:07
 * I need to think about the decision process for running the regression
 	* Provide good descriptions on how to got from Model Setup to Regression Eqn to actual model fit
 	* Provide descriptions about what to do in all situations.
-* 
+
+## Notes from March 2, 2022
+* What is the file format for the input data?
+	* Provide some imaging data as an example
+		* Also provide the tools to load data into Python
+		* Add asking for mask info if needed
+* How is mediation analysis different for brain imaging versus regular data?
+* Provide expected results
+	* This would be great with simulated data
+* Example code showing loading data and analysis,
+	* Add pointers from the MatLab
+* Spend more time looking at:
+	* https://github.com/QuentinAndre/pyprocessmacro/tree/master/pyprocessmacro
+
+
+		
