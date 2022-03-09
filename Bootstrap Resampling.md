@@ -30,8 +30,17 @@ Is the use of this resample matrix faster than the resample algorithms?
 
 np.random.choice(N,N)
 
-
-
+## Stratified Resampling
+This is a situation where the data is in multiple groups and the resampling is to be performed within each group. Below the if block is NO stratified sampling and the else block strtifieis the sampling across the two groups.
+```matlab
+	if isempty(temp.STRAT)
+		Samp = floor(data.Nsub*rand(data.Nsub,1))+1;
+	else
+		Samp1 = floor(NGr1*rand(NGr1,1))+1;
+		Samp2 = floor(NGr2*rand(NGr2,1))+1+NGr1;
+		Samp = [Samp1; Samp2];
+	end
+```
 
 ## References
 1. 

@@ -11,6 +11,7 @@ Created: 01-07-2022 10:07
 7. [[Flexible modeling of Mediation]]
 8. [[Mediation and Moderation for Brain Imaging]]
 9. [[Library of Mediation-Moderation Models]]
+10. [[References to MatLab Code]]
 
 
 
@@ -37,11 +38,13 @@ Created: 01-07-2022 10:07
 			* Type of confidence intervals to calculate
 				* Selection from a menu/list
 					* Percentile, Bias-Corrected
+			
 		2 Whether to apply TFCE (default of No)
 			* Yes/No
 		3 What correction for multiple comparisons to use
 			 * Selection from a menu/list
 				 * None, Family-wise, False-discovery
+					 * Where is this done in MatLab?
 		* Output from this step will be an analysis setup file specifically for processing the data
 * [[Prepare Model for Analysis]]
 * [[Prepare Model for Analysis Model 6]]
@@ -51,7 +54,7 @@ Created: 01-07-2022 10:07
 - Create equations using the data/variables as defined in the setup file
 - Process data/equations
 - Create path values as defined in the setup file, based on results
-- Run bootstrapping on all parameters
+- [[Bootstrap Resampling|Bootstrapping]]
 - Calculate confidence intervals on bootstrap results
 - Create a results summary page
 - Create a library of setup files of the most common designs.
