@@ -17,9 +17,11 @@ $\beta = \frac{X^T \cdot Y}{X^T \cdot X}$
 
 ## Resample with a matrix
 It is possible to create a sparse matrix that can be pre-multiplied by a data/design matrix that will create a resampled version of it. This matrix B is (NxN) containing zeros, but a single one value in each row. 
-X = [a e; b f; c g; d h]
-B = [0 1 0 0; 1 0 0 0; 0 0 0 1; 0 1 0 0]
-BX=[b f; a e; d h; b f]
+```
+	X = [a e; b f; c g; d h]
+	B = [0 1 0 0; 1 0 0 0; 0 0 0 1; 0 1 0 0]
+	BX=[b f; a e; d h; b f]
+```
 Therefore, B is equivalent to [2 1 4 2] resamples.
 
 Is the use of this resample matrix faster than the resample algorithms?
