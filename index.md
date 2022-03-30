@@ -63,24 +63,6 @@ Created: 01-07-2022 10:07
 1. https://arxiv.org/abs/2106.02482
 
 
-## Notes from Feb 9, 2022
-* Define what the deliverables are for the students
-* I need to think about the decision process for running the regression
-	* Provide good descriptions on how to got from Model Setup to Regression Eqn to actual model fit
-	* Provide descriptions about what to do in all situations.
+# Notes
+[[CSI4900 Notes]]
 
-## Notes from March 2, 2022
-* What is the file format for the input data?
-	* Provide some imaging data as an example
-		* Also provide the tools to load data into Python
-		* Add asking for mask info if needed
-* How is mediation analysis different for brain imaging versus regular data?
-* Provide expected results
-	* This would be great with simulated data
-* Example code showing loading data and analysis,
-	* Add pointers from the MatLab --> [[References to MatLab Code]]
-* Spend more time looking at:
-	* https://github.com/QuentinAndre/pyprocessmacro/tree/master/pyprocessmacro
-
-
-		
